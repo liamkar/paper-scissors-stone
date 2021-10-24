@@ -4,10 +4,10 @@ import ScoreBoard from './ScoreBoard'
 const PlayerContainer = ({ header, points, children }) => {
 
   return (
-    <div style={{display:'flex', flexDirection:'column'}}>
+    <section style={{display:'flex', flexDirection:'column'}}>
         <ScoreBoard header={header} points={points}/>
         {children}
-    </div>
+    </section>
   );
 };
 

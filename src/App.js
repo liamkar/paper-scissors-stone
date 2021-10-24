@@ -84,12 +84,10 @@ function resetGame() {
       }
 
       {(gamePhase === GAME_PHASES.FIGHT || gamePhase === GAME_PHASES.RESULT || gamePhase === GAME_PHASES.FINAL ) &&
-        <>        
         <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between', width:'50%'}}>          
           <HumanPlayer points={points} phase={gamePhase} fight={fight} selectionId={selectedElementId}/>
           <ComputerPlayer points={enemyPoints} phase={gamePhase} selectionId={selectedEnemyElementId}/>
         </div>
-        </>
       }
       {(gamePhase === GAME_PHASES.RESULT ) &&
         <RoundResults onClick={startNextRound} result={roundResult}/>

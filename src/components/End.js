@@ -14,15 +14,13 @@ const End = ({ points, enemyPoints, onClick }) => {
   }
 
   return (
-    <div style={{display:'flex', alignItems:'center', flexDirection:'column'}}>
+    <section style={{display:'flex', alignItems:'center', flexDirection:'column'}}>
         <FistIcon/>
-        <h1>FIGHT OVER</h1>
-        <h4>
-            {GAME_RESULTS_TEXTS.get(result)}
-        </h4>
-        <h4>Keep on practicing to one day become a master in Paper, scissor, stones!</h4>
+        <h2>FIGHT OVER</h2>
+        <p>{GAME_RESULTS_TEXTS.get(result)}</p>
+        <p>Keep on practicing to one day become a master in Paper, scissors, stones!</p>
         <button onClick={() => onClick(GAME_PHASES.FIGHT)}>FIGHT AGAIN!</button>    
-    </div>
+    </section>
   );
 };
 

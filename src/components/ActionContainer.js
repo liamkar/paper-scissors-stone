@@ -1,14 +1,12 @@
 import React from "react";
 
-const ActionContainer = ({ children, phase }) => {
+const ActionContainer = ({ children }) => {
 
   return (
-    <>
-    <div style={{display:'flex', flexDirection:'column'}}>
-        <h4>Select next:</h4>
+    <section style={{display:'flex', flexDirection:'column'}}>
+        <p>Select next:</p>
         {children}
-    </div>
-    </>
+    </section>
   );
 };
 
